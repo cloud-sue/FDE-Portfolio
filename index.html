@@ -14,29 +14,29 @@
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 <style>
 :root{
-  --primary:#e60023;
+  --primary:#0F766E;
   --on-primary:#ffffff;
-  --primary-pressed:#cc001f;
-  --ink:#000000;
-  --ink-soft:#211922;
-  --body:#33332e;
-  --charcoal:#262622;
-  --mute:#62625b;
-  --ash:#91918c;
-  --stone:#c8c8c1;
-  --hairline:#dadad3;
-  --hairline-soft:#e5e5e0;
-  --secondary-bg:#e5e5e0;
-  --secondary-pressed:#c8c8c1;
+  --primary-pressed:#0B5E58;
+  --ink:#17324D;
+  --ink-soft:#17324D;
+  --body:#273444;
+  --charcoal:#17324D;
+  --mute:#526477;
+  --ash:#718397;
+  --stone:#CBD7E2;
+  --hairline:#D4DFE8;
+  --hairline-soft:#E2EAF1;
+  --secondary-bg:#E2EAF1;
+  --secondary-pressed:#CBD7E2;
   --canvas:#ffffff;
-  --surface-soft:#fbfbf9;
-  --surface-card:#f6f6f3;
+  --surface-soft:#ffffff;
+  --surface-card:#EFF4F8;
   --on-dark:#ffffff;
   --on-dark-mute:rgba(255,255,255,.7);
-  --surface-dark:#262622;
-  --focus-outer:#435ee5;
-  --success-deep:#103c25;
-  --success-pale:#c7f0da;
+  --surface-dark:#17324D;
+  --focus-outer:#0F766E;
+  --success-deep:#0F766E;
+  --success-pale:#DEF2EE;
 
   --r-sm:8px; --r-md:16px; --r-lg:32px; --r-full:9999px;
   --sp-xxs:4px; --sp-xs:6px; --sp-sm:8px; --sp-md:12px; --sp-lg:16px; --sp-xl:24px; --sp-xxl:32px; --sp-section:64px;
@@ -65,7 +65,7 @@ a{color:inherit; text-decoration:none;}
   height:64px;
 }
 .primary-nav .shell{height:64px; display:flex; align-items:center; justify-content:space-between; gap:20px;}
-.nav-logo{font-size:18px; font-weight:700; letter-spacing:-0.3px; display:flex; align-items:center; gap:8px;}
+.nav-logo{color:var(--ink); font-size:18px; font-weight:700; letter-spacing:-0.3px; display:flex; align-items:center; gap:8px;}
 .nav-logo .dot{width:9px; height:9px; border-radius:50%; background:var(--primary); display:inline-block;}
 .nav-links{display:flex; gap:28px; font-size:14px; font-weight:600;}
 .nav-links a{color:var(--charcoal); padding:4px 0; border-bottom:2px solid transparent;}
@@ -92,7 +92,7 @@ a{color:inherit; text-decoration:none;}
   font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase;
   color:var(--primary); margin:0 0 14px;
 }
-.eyebrow.on-dark{color:#ff5c6e;}
+.eyebrow.on-dark{color:#86D5CC;}
 h1,h2,h3,h4{margin:0; font-weight:700; letter-spacing:-0.6px; color:var(--ink);}
 .display-xl{font-size:clamp(34px, 6vw, 62px); line-height:1.1; letter-spacing:-1.4px;}
 .heading-xl{font-size:clamp(24px, 3.4vw, 30px); line-height:1.22; letter-spacing:-0.8px;}
@@ -158,7 +158,7 @@ h1,h2,h3,h4{margin:0; font-weight:700; letter-spacing:-0.6px; color:var(--ink);}
   border-radius:var(--r-full); padding:10px 18px; font-size:13px; font-weight:700;
   font-family:inherit;
 }
-.chip.active{background:#103c25; color:var(--on-dark);}
+.chip.active{background:#0F766E; color:var(--on-dark);}
 
 .tab-panel{display:none;}
 .tab-panel.active{display:block;}
@@ -175,7 +175,7 @@ th{background:var(--surface-card); font-weight:700; color:var(--ink);}
 tr:last-child td{border-bottom:none;}
 
 pre, .code{
-  background:var(--surface-dark); color:#f2f0ea;
+  background:var(--surface-dark); color:#EFF4F8;
   border-radius:var(--r-md); padding:16px 18px; overflow-x:auto;
   font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size:12.5px; line-height:1.6; margin:0 0 12px;
@@ -194,16 +194,16 @@ pre, .code{
   font-weight:700; font-size:15px; color:var(--on-dark); gap:16px;
 }
 .acc summary::-webkit-details-marker{display:none;}
-.acc summary .plus{font-size:20px; font-weight:400; color:#ff5c6e; flex-shrink:0;}
+.acc summary .plus{font-size:20px; font-weight:400; color:#86D5CC; flex-shrink:0;}
 .acc[open] summary .plus{transform:rotate(45deg);}
 .acc .acc-meta{font-size:12px; color:var(--on-dark-mute); font-weight:500; margin-top:4px;}
 .acc-body{padding:0 24px 24px; color:var(--on-dark-mute); font-size:14px; line-height:1.7;}
 .acc-body h5{color:var(--on-dark); font-size:13px; text-transform:uppercase; letter-spacing:1px; margin:18px 0 8px; opacity:.9;}
 .acc-body h5:first-child{margin-top:0;}
-.acc-body .code{background:#151412;}
-.acc-body table{background:#2e2c28; color:var(--on-dark-mute);}
-.acc-body th{background:#3a3733; color:var(--on-dark);}
-.acc-body th,.acc-body td{border-color:#403d38;}
+.acc-body .code{background:#10263B;}
+.acc-body table{background:#1C3B56; color:var(--on-dark-mute);}
+.acc-body th{background:#244760; color:var(--on-dark);}
+.acc-body th,.acc-body td{border-color:#3D5870;}
 
 .security-note{
   font-size:12px; color:var(--ash); letter-spacing:.4px; margin-top:10px;
@@ -219,14 +219,14 @@ pre, .code{
   padding:40px 0 28px; margin-top:16px;
 }
 .footer .shell{display:flex; flex-direction:column; gap:6px;}
-.footer .brand{font-weight:700; color:var(--primary); font-size:14px;}
+.footer .brand{font-weight:700; color:var(--ink); font-size:14px;}
 .footer .muted{color:var(--mute); font-size:13px;}
 
 .role-list{margin:14px 0 0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:8px;}
 .role-list li{font-size:14px; color:var(--body); padding-left:20px; position:relative;}
 .role-list li::before{content:"•"; color:var(--primary); position:absolute; left:0; font-weight:700;}
 
-.role-badge{display:inline-block; font-size:11px; font-weight:700; padding:4px 10px; border-radius:var(--r-full); background:var(--primary); color:#fff; margin-bottom:10px;}
+.role-badge{display:inline-block; font-size:11px; font-weight:700; padding:4px 10px; border-radius:var(--r-full); background:var(--ink); color:#fff; margin-bottom:10px;}
 .role-badge.secondary{background:var(--secondary-bg); color:var(--ink);}
 
 .contact-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:28px;}
@@ -263,10 +263,10 @@ pre, .code{
 
 <nav class="primary-nav">
   <div class="shell">
-    <div class="nav-logo"><span class="dot"></span>박수현 · Cloud Engineer</div>
+    <div class="nav-logo"><span class="dot"></span>박수현 · FDE</div>
     <div class="nav-links">
       <a href="#skills">Skills</a>
-      <a href="#competency">Core Competency</a>
+      <a href="#competency">How I Work</a>
       <a href="#projects">Projects</a>
       <a href="#troubleshooting">Troubleshooting</a>
       <a href="#career">Career</a>
@@ -289,12 +289,17 @@ pre, .code{
 
   <!-- HERO -->
   <section class="hero shell">
-    <div class="eyebrow">CLOUD ENGINEER / DEVOPS PORTFOLIO</div>
-    <h1 class="display-xl">Application을 이해하는<br>Cloud Engineer</h1>
-    <p class="lead">Java/Spring 기반 웹 개발 교육과 프로젝트 운영 경험을 바탕으로, <br> Kubernetes · Terraform · CI/CD · Multi-Cloud DR 환경을 설계하고 운영하는 클라우드 엔지니어 박수현입니다.</p>
+    <div class="eyebrow">FDE PORTFOLIO</div>
+    <h1 class="display-xl">AI-Native<br>Forward Deployed Engineer</h1>
+    <p class="lead" style="color:var(--ink);"><strong>비즈니스의 문제를 이해하고, AI와 소프트웨어로 해결합니다.</strong></p>
+    <p class="lead">5년간 IT 교육·운영 현장에서 다양한 이해관계자의 요구를 조율하고, 개발·데이터·시스템 운영 업무를 수행했습니다.</p>
+    <p class="lead">이후 Codex와 Claude Code를 활용해 웹 서비스와 클라우드 인프라를 구현하고, Terraform·Kubernetes·CI/CD 기반으로 실제 배포 및 장애 검증까지 경험했습니다. 현재는 n8n 기반 AI Agent 자동화 교육을 통해 챗봇, RAG, 외부 API 연동과 워크플로 설계를 다루고 있습니다.</p>
+    <p class="lead">저는 고객의 요청을 그대로 구현하기보다, 그 요청이 발생한 이유와 해결해야 할 문제를 먼저 파악하는 엔지니어를 지향합니다.</p>
+    <p class="lead" style="color:var(--ink);margin-top:24px;"><strong>Problem Discovery · AI Agent Development · Deployment · Operations</strong></p>
     <div class="btn-row" style="margin-top:28px;">
-      <a class="btn btn-primary" href="#main-project">대표 프로젝트 보기</a>
+      <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
       <a class="btn btn-secondary" href="https://github.com/cloud-sue" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-secondary" href="./assets/resume-fde.pdf" target="_blank" rel="noopener">이력서</a>
     </div>
   </section>
 
@@ -324,37 +329,33 @@ pre, .code{
     </div>
   </section>
 
-  <!-- CORE COMPETENCY -->
+  <!-- HOW I WORK -->
   <section class="shell section-tight" id="competency">
     <div class="section-head">
-      <div class="eyebrow">CORE COMPETENCY</div>
-      <h2 class="heading-xl">Core Competency</h2>
+      <div class="eyebrow">HOW I WORK</div>
+      <h2 class="heading-xl">HOW I WORK</h2>
     </div>
-    <div class="grid grid-3">
-      <div class="feature-card-soft">
-        <h3>클라우드 아키텍처</h3>
-        <p>Azure/AWS 기반 3-Tier, 고가용성, 멀티클라우드 DR 아키텍처 설계 및 구현</p>
-      </div>
-      <div class="feature-card-soft">
-        <h3>쿠버네티스 운영</h3>
-        <p>AKS/EKS 환경에서 Web/WAS 컨테이너 배포, Service, Ingress, Probe, HPA 구성</p>
-      </div>
-      <div class="feature-card-soft">
-        <h3>IaC 자동화</h3>
-        <p>Terraform 모듈화, Remote State, GitHub Actions, ArgoCD 기반 자동화 경험</p>
-      </div>
-      <div class="feature-card-soft">
-        <h3>트러블슈팅</h3>
-        <p>DB Failover, Redis Session, Secret 주입, 배포/인증 오류 원인 분석 및 해결</p>
-      </div>
-      <div class="feature-card-soft">
-        <h3>애플리케이션 이해</h3>
-        <p>Java/Spring, DB, WAS, 배포 흐름 이해를 기반으로 인프라-워크로드 문제 연결</p>
-      </div>
-      <div class="feature-card-soft">
-        <h3>문서화</h3>
-        <p>설계 이유, 장애 원인, 해결 과정, 회고를 문서화하여 설명 가능한 포트폴리오 구성</p>
-      </div>
+    <div class="grid grid-2">
+      <article class="feature-card-soft">
+        <h3>01. Understand the Real Problem</h3>
+        <p style="color:var(--ink);margin-bottom:14px;"><strong>요청받은 것보다 해결해야 할 문제를 먼저 찾습니다.</strong></p>
+        <p>5년간 IT 교육·운영 현장에서 다양한 이해관계자의 요구를 조율했습니다. 공모전 TFT에서는 단순히 참여 실적을 확대하기보다 교육과정의 안정성과 교육생의 성과를 동시에 달성할 수 있도록 운영 범위를 재설계했습니다.</p>
+      </article>
+      <article class="feature-card-soft">
+        <h3>02. Delegate to AI, Verify the Results</h3>
+        <p style="color:var(--ink);margin-bottom:14px;"><strong>AI에 구현을 맡기되, 결과에 대한 책임은 직접 집니다.</strong></p>
+        <p>Codex를 이용해 Terraform 인프라 설계, CI/CD 구성, Kubernetes 매니페스트 작성 및 오류 수정을 진행했습니다. 생성된 결과물은 Terraform, Argo CD, Kubernetes 상태 확인과 실제 기능 테스트로 검증했습니다.</p>
+      </article>
+      <article class="feature-card-soft">
+        <h3>03. Own the Outcome</h3>
+        <p style="color:var(--ink);margin-bottom:14px;"><strong>배포 완료가 아니라 정상적인 서비스 운영을 목표로 합니다.</strong></p>
+        <p>K-뷰티 프로젝트에서 HTTPS 인증서 참조 오류, Secret 관리 문제, Redis 세션 장애 등을 해결했습니다. 단순 복구에 그치지 않고 운영 구조와 권한 관리 방식을 개선해 재발 가능성을 줄였습니다.</p>
+      </article>
+      <article class="feature-card-soft">
+        <h3>04. Connect Business and Technology</h3>
+        <p style="color:var(--ink);margin-bottom:14px;"><strong>기술을 이해하는 것에서 나아가 현장의 업무를 개선하고자 합니다.</strong></p>
+        <p>n8n을 활용한 챗봇, RAG, API 연동, Webhook 및 서브워크플로우 교육을 진행하고 있습니다. 기술적 구현과 실제 업무 프로세스를 연결하는 역량을 지속적으로 확장하고 있습니다.</p>
+      </article>
     </div>
   </section>
 
@@ -362,11 +363,32 @@ pre, .code{
   <section class="shell section-tight" id="main-project">
     <div class="block block-cream">
       <div class="eyebrow">MAIN PROJECT</div>
-      <h2 class="heading-xl">Multi-Cloud(Azure·AWS) DR 기반<br>K-Beauty 커머스 플랫폼 서비스</h2>
+      <h2 class="heading-xl">Codex 기반 K-뷰티 커머스 플랫폼 개발 및 멀티클라우드 배포</h2>
       <p class="lead">Azure를 메인 운영 환경으로, AWS를 보조 DR 환경으로 구성한 멀티클라우드 커머스 서비스 운영 프로젝트입니다. <br> 단일 클라우드 장애점(SPOF)을 해소하고 IaC·CI/CD로 자동화하는 DevOps 환경을 구축했습니다.</p>
 
+      <div class="feature-card" style="margin-top:28px;">
+        <h3>AI 에이전트 활용</h3>
+        <ul class="role-list">
+          <li>전체 인프라 구성 목표와 아키텍처를 바탕으로 Codex에 설계·구현 위임</li>
+          <li>Terraform 모듈, CI/CD 워크플로우 및 Kubernetes 매니페스트 작성</li>
+          <li>작업 특성에 따라 전체 목표 위임, 모듈 단위 작업, 오류 로그 기반 수정 방식 병행</li>
+          <li>terraform plan/apply, kubectl, Argo CD로 인프라·배포 상태 검증</li>
+          <li>실제 서비스 기능 테스트 및 DR 전환 시나리오로 운영 결과 확인</li>
+        </ul>
+      </div>
+
       <div class="pin-card-large" style="margin-top:28px;">
-        <img src="./images/architecture1.png" alt="Multi-Cloud DR 전체 아키텍처">
+        <img src="./images/architecture1.png" alt="K-뷰티 커머스 플랫폼의 Azure 운영 환경과 AWS DR 멀티클라우드 아키텍처" loading="lazy">
+      </div>
+
+      <div class="feature-card" style="margin-top:28px;">
+        <h3>결과</h3>
+        <ul class="role-list">
+          <li>Terraform 11개 모듈 기반 인프라 구성 및 GitHub Actions·Argo CD 배포 자동화</li>
+          <li>Kubernetes Blue/Green 및 Canary 배포 구현</li>
+          <li>DR 훈련 5회 중 4회 목표 충족, 평균 RTO 33분</li>
+          <li>프로젝트 최종 평가 1위</li>
+        </ul>
       </div>
 
       <div class="stat-row">
@@ -376,18 +398,7 @@ pre, .code{
         <div class="stat"><div class="num">11개</div><div class="label">Terraform 모듈</div></div>
       </div>
 
-      <div class="grid grid-2" style="margin-top:28px;">
-        <div class="feature-card">
-          <h3>My Role</h3>
-          <ul class="role-list">
-            <li>K-Beauty 홈페이지 설계 및 구현</li>
-            <li>Terraform 기반 Azure 인프라 구현</li>
-            <li>Kubernetes Blue/Green + Canary 배포 구성</li>
-            <li>Redis 기반 세션 외부화 적용</li>
-            <li>GitHub Actions + ArgoCD 기반 CI/CD 구성</li>
-            <li>HTTPS 인증서 적용 및 만료 알림 구현</li>
-          </ul>
-        </div>
+      <div style="margin-top:28px;">
         <div class="feature-card">
           <h3>Why this project matters</h3>
           <p style="font-size:14px; color:var(--mute); line-height:1.65;">단일 클라우드 장애 시 서비스 전체가 중단되는 문제를 줄이기 위해 Azure-AWS 이중 구조를 설계했습니다. Terraform, Kubernetes, CI/CD, Redis, HTTPS를 개별 기술이 아니라 <strong style="color:var(--ink)">운영 흐름</strong>으로 연결한 것이 핵심입니다.</p>
@@ -783,7 +794,7 @@ az keyvault secret list-versions --vault-name kv-agw-azsis-kbeauty-dev --name ww
       <div class="contact-grid">
         <a class="contact-card" href="mailto:sue2019522@gmail.com">
           <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#e60023" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
           </div>
           <div>
             <div class="contact-label">Email</div>
@@ -794,7 +805,7 @@ az keyvault secret list-versions --vault-name kv-agw-azsis-kbeauty-dev --name ww
 
         <a class="contact-card" href="https://github.com/cloud-sue" target="_blank" rel="noopener">
           <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="#000"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.1-3.2.58-4.03-.78-4.28-1.5-.14-.36-.76-1.5-1.3-1.8-.44-.24-1.08-.82-.02-.84.99-.02 1.7.92 1.94 1.3 1.13 1.9 2.94 1.36 3.66 1.04.11-.82.44-1.36.8-1.68-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.7 5.39-5.26 5.67.45.39.85 1.15.85 2.32 0 1.68-.02 3.03-.02 3.44 0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#17324D"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.1-3.2.58-4.03-.78-4.28-1.5-.14-.36-.76-1.5-1.3-1.8-.44-.24-1.08-.82-.02-.84.99-.02 1.7.92 1.94 1.3 1.13 1.9 2.94 1.36 3.66 1.04.11-.82.44-1.36.8-1.68-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.7 5.39-5.26 5.67.45.39.85 1.15.85 2.32 0 1.68-.02 3.03-.02 3.44 0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
           </div>
           <div>
             <div class="contact-label">GitHub</div>
@@ -805,7 +816,7 @@ az keyvault secret list-versions --vault-name kv-agw-azsis-kbeauty-dev --name ww
 
         <a class="contact-card" href="https://www.linkedin.com/in/sue%EB%B0%95%EC%88%98%ED%98%84" target="_blank" rel="noopener">
           <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#17324D"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
           </div>
           <div>
             <div class="contact-label">LinkedIn</div>
